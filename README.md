@@ -26,13 +26,15 @@ retell-freightpath-agent/
     └── transcripts/             # Live call transcripts added after testing
 ```
 
-| Path | What it is |
-|------|------------|
+
+| Path                        | What it is                                                                                                                        |
+| --------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
 | `agents/inbound-support.md` | Complete single-prompt agent for existing customers: handles shipment status, delivery exceptions, billing triage, and escalation |
-| `agents/inbound-sales.md` | Complete single-prompt agent for inbound leads: qualifies prospects and books 30-min demos with AEs |
-| `docs/DESIGN.md` | The reasoning behind every major design decision, including what was intentionally left out of v1 |
-| `docs/TESTING.md` | Scenario matrix (10 cases per agent), simulation test guide, and transcript review checklist |
-| `docs/PRODUCT_BRIEF.md` | Product feedback written for a Retell AI PM audience: gaps I found while building, with prioritized feature proposals |
+| `agents/inbound-sales.md`   | Complete single-prompt agent for inbound leads: qualifies prospects and books 30-min demos with AEs                               |
+| `docs/DESIGN.md`            | The reasoning behind every major design decision, including what was intentionally left out of v1                                 |
+| `docs/TESTING.md`           | Scenario matrix (10 cases per agent), simulation test guide, and transcript review checklist                                      |
+| `docs/PRODUCT_BRIEF.md`     | Product feedback written for a Retell AI PM audience: gaps I found while building, with prioritized feature proposals             |
+
 
 ---
 
@@ -41,35 +43,40 @@ retell-freightpath-agent/
 > Call the **support line** and tell Alex you have a delivery exception on shipment #48291.
 > Call the **sales line** and tell Jordan you're running a 300-load-a-month brokerage on spreadsheets.
 >
-> **Support line:** [PHONE NUMBER — COMING SOON]
-> **Sales line:** [PHONE NUMBER — COMING SOON]
+> **Support line:** Demo number available upon request — contact me directly.
+> **Sales line:** Demo number available upon request — contact me directly.
 
 ---
 
 ## Tech Stack
 
-| Layer | Tool |
-|-------|------|
-| Voice agent platform | [Retell AI](https://www.retellai.com) |
-| LLM | Claude (Anthropic) |
-| Voice & telephony | Retell AI hosted telephony |
-| Prompt design | Single-prompt agent architecture |
-| Agent architecture | Single-prompt (linear task flow, no conversation graph) |
+
+| Layer                | Tool                                                    |
+| -------------------- | ------------------------------------------------------- |
+| Voice agent platform | [Retell AI](https://www.retellai.com)                   |
+| LLM                  | Claude (Anthropic)                                      |
+| Voice & telephony    | Retell AI hosted telephony                              |
+| Prompt design        | Single-prompt agent architecture                        |
+| Agent architecture   | Single-prompt (linear task flow, no conversation graph) |
+
 
 ---
 
 ## Demo
 
-> ![FreightPath Voice Agent Architecture](assets/architecture-diagram.svg)
-> _Two-agent architecture: inbound support (Alex) and inbound sales (Jordan), both powered by Retell AI and Claude._
+> FreightPath Voice Agent Architecture
+> *Two-agent architecture: inbound support (Alex) and inbound sales (Jordan), both powered by Retell AI and Claude.*
 
-> **Sample transcript placeholder** — _See `assets/transcripts/` after live testing_
+> **Sample transcript placeholder** — *See `assets/transcripts/` after live testing*
 
 ---
 
 ## Project Status
 
-| Agent | Prompt written | Product brief written | Simulated in Retell | Live number assigned | Transcripts collected |
-|-------|---------------|----------------------|--------------------|--------------------|----------------------|
-| Inbound Support (Alex) | Done | Done | Pending | Pending | Pending |
-| Inbound Sales (Jordan) | Done | Done | Pending | Pending | Pending |
+
+| Agent                  | Prompt written | Product brief written | Simulated in Retell | Live number assigned | Transcripts collected |
+| ---------------------- | -------------- | --------------------- | ------------------- | -------------------- | --------------------- |
+| Inbound Support (Alex) | Done           | Done                  | Pending             | Pending              | Pending               |
+| Inbound Sales (Jordan) | Done           | Done                  | Pending             | Pending              | Pending               |
+
+
