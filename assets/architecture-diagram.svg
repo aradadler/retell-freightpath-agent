@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 900 600" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+
+  <!-- Background -->
+  <rect width="900" height="600" fill="#FFFFFF"/>
+
+  <!-- ─── COLUMN HEADERS ─── -->
+  <text x="225" y="44" text-anchor="middle" font-size="15" font-weight="600" fill="#1F2937" letter-spacing="0.3">Support Line</text>
+  <text x="675" y="44" text-anchor="middle" font-size="15" font-weight="600" fill="#1F2937" letter-spacing="0.3">Sales Line</text>
+
+  <!-- ─── CALLER ICONS ─── -->
+  <!-- Left caller -->
+  <circle cx="225" cy="82" r="14" fill="#E5E7EB" stroke="#9CA3AF" stroke-width="1.5"/>
+  <circle cx="225" cy="77" r="5.5" fill="#6B7280"/>
+  <path d="M213 94 Q213 87 225 87 Q237 87 237 94" fill="#6B7280"/>
+  <text x="225" y="107" text-anchor="middle" font-size="11" fill="#6B7280">Caller</text>
+
+  <!-- Right caller -->
+  <circle cx="675" cy="82" r="14" fill="#E5E7EB" stroke="#9CA3AF" stroke-width="1.5"/>
+  <circle cx="675" cy="77" r="5.5" fill="#6B7280"/>
+  <path d="M663 94 Q663 87 675 87 Q687 87 687 94" fill="#6B7280"/>
+  <text x="675" y="107" text-anchor="middle" font-size="11" fill="#6B7280">Caller</text>
+
+  <!-- ─── ARROWS: Caller → Telephony ─── -->
+  <line x1="225" y1="111" x2="225" y2="131" stroke="#9CA3AF" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="235" y="125" font-size="10" fill="#9CA3AF">Inbound call</text>
+
+  <line x1="675" y1="111" x2="675" y2="131" stroke="#9CA3AF" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="685" y="125" font-size="10" fill="#9CA3AF">Inbound call</text>
+
+  <!-- ─── RETELL TELEPHONY BOXES ─── -->
+  <rect x="145" y="132" width="160" height="44" rx="6" fill="#F3F4F6" stroke="#D1D5DB" stroke-width="1.5"/>
+  <text x="225" y="150" text-anchor="middle" font-size="12" font-weight="500" fill="#1F2937">Retell AI Telephony</text>
+  <text x="225" y="165" text-anchor="middle" font-size="10" fill="#6B7280">Voice · STT · TTS</text>
+
+  <rect x="595" y="132" width="160" height="44" rx="6" fill="#F3F4F6" stroke="#D1D5DB" stroke-width="1.5"/>
+  <text x="675" y="150" text-anchor="middle" font-size="12" font-weight="500" fill="#1F2937">Retell AI Telephony</text>
+  <text x="675" y="165" text-anchor="middle" font-size="10" fill="#6B7280">Voice · STT · TTS</text>
+
+  <!-- ─── ARROWS: Telephony → Agent ─── -->
+  <line x1="225" y1="176" x2="225" y2="208" stroke="#9CA3AF" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="675" y1="176" x2="675" y2="208" stroke="#9CA3AF" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- ─── AGENT BOXES ─── -->
+  <rect x="130" y="209" width="190" height="56" rx="6" fill="#2563EB" stroke="none"/>
+  <text x="225" y="230" text-anchor="middle" font-size="13" font-weight="600" fill="#FFFFFF">Alex — Support Agent</text>
+  <text x="225" y="247" text-anchor="middle" font-size="10" fill="#BFDBFE">Single-prompt · Claude LLM</text>
+  <text x="225" y="259" text-anchor="middle" font-size="10" fill="#BFDBFE">inbound-support.md</text>
+
+  <rect x="580" y="209" width="190" height="56" rx="6" fill="#2563EB" stroke="none"/>
+  <text x="675" y="230" text-anchor="middle" font-size="13" font-weight="600" fill="#FFFFFF">Jordan — Sales Agent</text>
+  <text x="675" y="247" text-anchor="middle" font-size="10" fill="#BFDBFE">Single-prompt · Claude LLM</text>
+  <text x="675" y="259" text-anchor="middle" font-size="10" fill="#BFDBFE">inbound-sales.md</text>
+
+  <!-- ─── ARROWS: Agent → Outcomes (3-way fan) ─── -->
+  <!-- Left agent: stem down, then fan -->
+  <line x1="225" y1="265" x2="225" y2="295" stroke="#9CA3AF" stroke-width="1.5"/>
+  <line x1="225" y1="295" x2="105" y2="295" stroke="#9CA3AF" stroke-width="1.5"/>
+  <line x1="225" y1="295" x2="225" y2="295" stroke="#9CA3AF" stroke-width="1.5"/>
+  <line x1="225" y1="295" x2="345" y2="295" stroke="#9CA3AF" stroke-width="1.5"/>
+
+  <line x1="105" y1="295" x2="105" y2="318" stroke="#9CA3AF" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="225" y1="295" x2="225" y2="318" stroke="#9CA3AF" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="345" y1="295" x2="345" y2="318" stroke="#9CA3AF" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Right agent: stem down, then fan -->
+  <line x1="675" y1="265" x2="675" y2="295" stroke="#9CA3AF" stroke-width="1.5"/>
+  <line x1="675" y1="295" x2="555" y2="295" stroke="#9CA3AF" stroke-width="1.5"/>
+  <line x1="675" y1="295" x2="675" y2="295" stroke="#9CA3AF" stroke-width="1.5"/>
+  <line x1="675" y1="295" x2="795" y2="295" stroke="#9CA3AF" stroke-width="1.5"/>
+
+  <line x1="555" y1="295" x2="555" y2="318" stroke="#9CA3AF" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="675" y1="295" x2="675" y2="318" stroke="#9CA3AF" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="795" y1="295" x2="795" y2="318" stroke="#9CA3AF" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- ─── OUTCOME BOXES — SUPPORT ─── -->
+  <rect x="40" y="319" width="130" height="46" rx="5" fill="#F0FDF4" stroke="#86EFAC" stroke-width="1.5"/>
+  <text x="105" y="337" text-anchor="middle" font-size="10.5" font-weight="500" fill="#166534">Shipment status</text>
+  <text x="105" y="352" text-anchor="middle" font-size="10.5" fill="#166534">→ Resolved</text>
+
+  <rect x="160" y="319" width="130" height="46" rx="5" fill="#FFF7ED" stroke="#FED7AA" stroke-width="1.5"/>
+  <text x="225" y="337" text-anchor="middle" font-size="10.5" font-weight="500" fill="#9A3412">Exception / Billing</text>
+  <text x="225" y="352" text-anchor="middle" font-size="10.5" fill="#9A3412">→ Human callback</text>
+
+  <rect x="280" y="319" width="130" height="46" rx="5" fill="#FFF7ED" stroke="#FED7AA" stroke-width="1.5"/>
+  <text x="345" y="337" text-anchor="middle" font-size="10.5" font-weight="500" fill="#9A3412">Escalation request</text>
+  <text x="345" y="352" text-anchor="middle" font-size="10.5" fill="#9A3412">→ Human callback</text>
+
+  <!-- ─── OUTCOME BOXES — SALES ─── -->
+  <rect x="490" y="319" width="130" height="46" rx="5" fill="#F0FDF4" stroke="#86EFAC" stroke-width="1.5"/>
+  <text x="555" y="337" text-anchor="middle" font-size="10.5" font-weight="500" fill="#166534">Qualified lead</text>
+  <text x="555" y="352" text-anchor="middle" font-size="10.5" fill="#166534">→ Demo booked</text>
+
+  <rect x="610" y="319" width="130" height="46" rx="5" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1.5"/>
+  <text x="675" y="337" text-anchor="middle" font-size="10.5" font-weight="500" fill="#1E40AF">Early stage</text>
+  <text x="675" y="352" text-anchor="middle" font-size="10.5" fill="#1E40AF">→ Async follow-up</text>
+
+  <rect x="730" y="319" width="130" height="46" rx="5" fill="#F9FAFB" stroke="#D1D5DB" stroke-width="1.5"/>
+  <text x="795" y="337" text-anchor="middle" font-size="10.5" font-weight="500" fill="#374151">Not a fit</text>
+  <text x="795" y="352" text-anchor="middle" font-size="10.5" fill="#374151">→ Honest redirect</text>
+
+  <!-- ─── DIVIDER ─── -->
+  <line x1="40" y1="415" x2="860" y2="415" stroke="#E5E7EB" stroke-width="1" stroke-dasharray="5,4"/>
+  <text x="450" y="410" text-anchor="middle" font-size="10" fill="#9CA3AF">Shared platform layer</text>
+
+  <!-- ─── SHARED PLATFORM BOX ─── -->
+  <rect x="100" y="425" width="700" height="100" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
+  <text x="450" y="447" text-anchor="middle" font-size="13" font-weight="600" fill="#1F2937">Retell AI Platform</text>
+
+  <!-- Three items inside -->
+  <rect x="140" y="457" width="175" height="50" rx="5" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1"/>
+  <text x="227" y="477" text-anchor="middle" font-size="11" font-weight="500" fill="#334155">Simulation Testing</text>
+  <text x="227" y="494" text-anchor="middle" font-size="10" fill="#64748B">+ AI QA post-call</text>
+
+  <rect x="362" y="457" width="175" height="50" rx="5" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1"/>
+  <text x="450" y="477" text-anchor="middle" font-size="11" font-weight="500" fill="#334155">Call Analytics</text>
+  <text x="450" y="494" text-anchor="middle" font-size="10" fill="#64748B">Volume · Duration · Sentiment</text>
+
+  <rect x="584" y="457" width="175" height="50" rx="5" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="672" y="477" text-anchor="middle" font-size="11" font-weight="500" fill="#64748B">Post-Call Webhooks</text>
+  <text x="672" y="494" text-anchor="middle" font-size="10" fill="#94A3B8">CRM sync · v2</text>
+
+  <!-- ─── FOOTER ─── -->
+  <text x="450" y="580" text-anchor="middle" font-size="10" fill="#9CA3AF">FreightPath Voice Agent · Built on Retell AI · Portfolio project by Arad Adler</text>
+
+  <!-- ─── ARROWHEAD MARKER ─── -->
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#9CA3AF"/>
+    </marker>
+  </defs>
+
+</svg>
