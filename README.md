@@ -69,6 +69,12 @@ retell-freightpath-agent/
 
 > **Sample transcript placeholder** — *See `assets/transcripts/` after live testing*
 
+### Sample Design Work
+
+The product brief (`docs/PRODUCT_BRIEF.md`) surfaced four platform gaps found during the build. Feature 1 — the **Prompt Debugger** — was taken through a full design spec (`docs/FEATURE1-PROMPT-DEBUGGER.md`) and into Figma. Below is the resulting mockup: an annotated transcript view that maps every agent turn back to the prompt section that drove it, with a confidence timeline and prompt section heatmap.
+
+![Prompt Debugger — Feature 1 Design](designs/Prompt-Debugger.png)
+
 ---
 
 ## Project Status
